@@ -53,6 +53,7 @@ namespace emakefun {
         if (!emakefun.singleFindUtil("\r\nSEND Canceled\r\n", 500)) {
             // serial.writeLine("");
             // serial.readBuffer(0);
+            serial.writeString("\r\n");
             return false;
         }
         return true;
